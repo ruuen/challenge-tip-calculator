@@ -57,6 +57,8 @@ export default function ButtonGroupInput({ field, handleChange }) {
         value={field.source === "custom" ? field.value : ""}
         isSelected={field.source === "custom" && true}
         handleChange={handleButtonChange}
+        hasError={field.hasError}
+        errorMsg={field.errorMsg}
       />
     );
   });

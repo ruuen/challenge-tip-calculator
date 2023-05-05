@@ -55,6 +55,7 @@ export default function TipCalculator() {
   }
 
   function handleSubmit(e) {
+    // debugger;
     e.preventDefault();
 
     const newFormState = validateFormData(formState);
@@ -71,6 +72,7 @@ export default function TipCalculator() {
     };
 
     updateSplit(inputs);
+    setFormState(newFormState);
   }
 
   function updateSplit({ bill, tipPercent, numberOfPeople }) {
