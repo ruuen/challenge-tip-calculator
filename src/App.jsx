@@ -1,6 +1,6 @@
 import "./App.scss";
 import TipCalculator from "./components/TipCalculator/TipCalculator";
-import AppHeader from "./AppHeader/AppHeader";
+import AppHeader from "./components/AppHeader/AppHeader";
 
 function App() {
   return (
