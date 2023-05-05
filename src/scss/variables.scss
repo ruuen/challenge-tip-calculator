@@ -1,8 +1,30 @@
 // Font Imports
+/* space-mono-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../media/fonts/space-mono-v12-latin-700.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+ */ url("../media/fonts/space-mono-v12-latin-700.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 
 // Colours
+$clr-white: #fff;
+$clr-grey-light: #f3f9fa;
+$clr-grey: #9ebbbd;
+
+$clr-cyan-100: #c5e4e7;
+$clr-cyan-200: #7f9d9f;
+$clr-cyan-300: #26c2ae;
+$clr-cyan-400: #5e7a7d;
+$clr-cyan-500: #547878;
+$clr-cyan-600: #3d6666;
+$clr-cyan-700: #00474b;
 
 // Fonts
+$font-family-main: "Space Mono", sans-serif;
+$font-weight-normal: 700;
 
 // Breakpoints
 $breakpoint-tablet: 700px;
