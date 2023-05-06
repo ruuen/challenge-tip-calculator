@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./TipCalculator.scss";
 import TipInputs from "../TipInputs/TipInputs";
 import TipResults from "../TipResults/TipResults";
 import validateFormData from "../../validators/validateFormData";

@@ -1,0 +1,20 @@
+@use "../../scss/variables.scss" as var;
+
+.header {
+  background-color: var.$clr-cyan-100;
+  padding: 2.5em 2em 2em 2em;
+
+  &__wrapper {
+    max-width: 11ch;
+    margin: 0 auto;
+    padding: 0 0 0 0.5em;
+  }
+
+  &__title {
+    color: var.$clr-cyan-600;
+    text-transform: uppercase;
+    letter-spacing: 0.35em;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}

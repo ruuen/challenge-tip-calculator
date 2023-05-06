@@ -1,4 +1,4 @@
-import { useState } from "react";
+import "./TipInputs.scss";
 import NumberInput from "../NumberInput/NumberInput";
 import ButtonGroupInput from "../ButtonGroupInput/ButtonGroupInput";
 

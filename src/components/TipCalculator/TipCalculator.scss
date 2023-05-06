@@ -1,0 +1,9 @@
+@use "../../scss/variables.scss" as var;
+
+.calculator {
+  flex-grow: 1;
+  $curved-border: 25px;
+  background-color: white;
+  border-radius: $curved-border $curved-border 0 0;
+  padding: 2em;
+}

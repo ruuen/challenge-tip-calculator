@@ -1,2 +1,7 @@
 @use "scss/variables" as var;
 @use "scss/global";
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
