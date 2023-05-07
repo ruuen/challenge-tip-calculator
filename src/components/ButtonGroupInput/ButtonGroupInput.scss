@@ -16,3 +16,10 @@
     font-size: 1rem;
   }
 }
+
+@media (min-width: var.$breakpoint-desktop) {
+  .calculator__btn-group {
+    grid-template-columns: repeat(3, 0.33fr);
+    grid-template-rows: repeat(2, 0.5fr);
+  }
+}

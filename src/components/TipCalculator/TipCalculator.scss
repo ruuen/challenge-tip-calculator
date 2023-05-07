@@ -8,4 +8,20 @@
   background-color: white;
   border-radius: $curved-border $curved-border 0 0;
   padding: 2em;
+  box-shadow: 0px 32px 43px rgba(79, 166, 175, 0.200735);
+}
+
+@media (min-width: var.$breakpoint-desktop) {
+  .calculator {
+    $curved-border: 25px;
+
+    flex-grow: unset;
+    border-radius: $curved-border;
+    flex-direction: row;
+    gap: 2em;
+    padding: 2em 2em 2em 3em;
+    margin: 0 auto 7.5em auto;
+    min-width: 57.5rem;
+    min-height: 30rem;
+  }
 }
