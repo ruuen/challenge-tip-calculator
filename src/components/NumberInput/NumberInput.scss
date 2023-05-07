@@ -4,3 +4,48 @@
   display: flex;
   flex-direction: column;
 }
+
+.calculator__label-wrapper {
+  padding: 0 0 0.45em 0;
+}
+
+.calculator__input-label {
+  font-size: 1rem;
+  color: var.$clr-cyan-500;
+}
+
+.calculator__input-unit-wrapper {
+  position: relative;
+}
+
+.calculator__unit {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  padding: 0.175em 0 0 1em;
+  user-select: none;
+}
+
+.calculator__input {
+  $curved-border: 5px;
+
+  position: relative;
+  max-width: 100%;
+  border: 2px solid var.$clr-grey-light;
+  border-radius: $curved-border;
+  padding: 0.125em 0.6em;
+  background: var.$clr-grey-light;
+  font-size: 1.5rem;
+  text-align: right;
+  color: var.$clr-cyan-800;
+
+  &::placeholder {
+    color: var.$clr-cyan-800;
+    opacity: 0.35;
+  }
+
+  &:hover {
+    border: 2px solid var.$clr-cyan-800;
+    cursor: pointer;
+  }
+}

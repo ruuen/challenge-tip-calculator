@@ -1,5 +1,31 @@
 @use "../../scss/variables.scss" as var;
 
 .calculator__btn {
+  $curved-border: 5px;
+
+  padding: 0.15em;
   min-width: 100%;
+  border: 3px solid var.$clr-cyan-800;
+  border-radius: 5px;
+  background: var.$clr-cyan-800;
+  color: var.$clr-white;
+  font-size: 1.5rem;
+  cursor: pointer;
+
+  &:hover {
+    background: var.$clr-cyan-200;
+    border: 3px solid var.$clr-cyan-200;
+    color: var.$clr-cyan-800;
+  }
+
+  &:focus {
+    border: 3px solid blueviolet;
+    outline: transparent;
+  }
+
+  &--selected {
+    background: var.$clr-cyan-400;
+    border: 3px solid var.$clr-cyan-400;
+    color: var.$clr-cyan-800;
+  }
 }

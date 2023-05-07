@@ -1,4 +1,4 @@
-import { useState } from "react";
+import "./TipResults.scss";
 import Button from "../Button/Button";
 import ResultItem from "../ResultItem/ResultItem";
 
