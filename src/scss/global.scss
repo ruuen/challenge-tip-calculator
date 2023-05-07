@@ -36,6 +36,12 @@ h6 {
   overflow-wrap: break-word;
 }
 
+input,
+button {
+  font-family: var.$font-family-main;
+  font-weight: var.$font-weight-normal;
+}
+
 // Visually hide element but leave it accessible for screen readers
 // https://www.a11ywithlindsey.com/blog/introduction-accessible-labeling
 .visually-hidden {

@@ -1,0 +1,12 @@
+@use "../../scss/variables.scss" as var;
+
+.calculator__btn-group-label {
+  display: block;
+}
+
+.calculator__btn-group {
+  display: grid;
+  grid-template-columns: repeat(3, 0.33fr);
+  grid-template-rows: repeat(2, 0.5fr);
+  grid-auto-columns: 0.33fr;
+}

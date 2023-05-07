@@ -1,3 +1,4 @@
+import "./ButtonGroupInput.scss";
 import Button from "../Button/Button";
 import CustomInput from "../CustomInput/CustomInput";
 
@@ -43,7 +44,11 @@ export default function ButtonGroupInput({ field, handleChange }) {
           id={`tipPercent__${option.name}`}
           name="tipPercent__preset"
           value={option.value}
-          isSelected={field.source === "preset" && Number(field.value) === option.value ? true : false}
+          isSelected={
+            field.source === "preset" && Number(field.value) === option.value
+              ? true
+              : false
+          }
           handleClick={handleButtonChange}
         />
       );
@@ -68,8 +73,17 @@ export default function ButtonGroupInput({ field, handleChange }) {
       source: e.target.name === "tipPercent__custom" ? "custom" : "preset",
     };
 
-    handleChange({ target: { name: "tipPercent", value: e.target.value } }, source);
+    handleChange(
+      { target: { name: "tipPercent", value: e.target.value } },
+      source
+    );
   }
 
-  return <div className="calculator__btn-input-group">{buttonElements}</div>;
+  return (
+    <div className="calculator__btn-input-group">
+      {/* Use aria label for this one */}
+      <span className="calculator__btn-group-label">Select Tip %</span>
+      <div className="calculator__btn-group">{buttonElements}</div>
+    </div>
+  );
 }
