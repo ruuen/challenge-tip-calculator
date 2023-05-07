@@ -13,7 +13,7 @@ export default function NumberInput({ field, handleChange }) {
       </div>
       <div className="calculator__input-unit-wrapper">
         <input
-          className="calculator__input"
+          className={`calculator__input ${field.hasError === true ? "calculator__input--error" : ""}`}
           id={field.fieldName}
           name={field.fieldName}
           value={field.value === 0 ? "" : field.value}

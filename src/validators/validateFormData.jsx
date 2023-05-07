@@ -8,7 +8,7 @@ export default function validateFormData(formData) {
       return {
         ...field,
         hasError: true,
-        errorMsg: "Must have a value",
+        errorMsg: "Can't be empty",
       };
     }
 
@@ -16,7 +16,7 @@ export default function validateFormData(formData) {
       return {
         ...field,
         hasError: true,
-        errorMsg: "Must be a whole or decimal number",
+        errorMsg: "Must be a number",
       };
     }
 

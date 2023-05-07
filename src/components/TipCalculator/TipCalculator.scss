@@ -2,6 +2,8 @@
 
 .calculator {
   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
   $curved-border: 25px;
   background-color: white;
   border-radius: $curved-border $curved-border 0 0;

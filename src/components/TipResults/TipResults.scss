@@ -1,10 +1,54 @@
 @use "../../scss/variables.scss" as var;
 
 .calculator__result-group {
+  $curved-border: 15px;
+
   background-color: var.$clr-cyan-800;
+  border-radius: $curved-border;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 2em 0 0 0;
+  padding: 2.75em 1.5em 1.5em 1.5em;
+
+  .calculator__btn {
+    $curved-border: 8px;
+
+    background: var.$clr-cyan-400;
+    border: 3px solid var.$clr-cyan-400;
+    color: var.$clr-cyan-800;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    padding: 0.35em 1em;
+    border-radius: $curved-border;
+
+    &:focus {
+      border: 3px solid var.$clr-grey-light;
+    }
+
+    &:hover {
+      background: var.$clr-cyan-200;
+      border: 3px solid var.$clr-cyan-200;
+    }
+  }
+}
+
+.calculator__result-group--empty .calculator__btn {
+  background: var.$clr-cyan-900;
+  border: 3px solid var.$clr-cyan-900;
+  color: var.$clr-cyan-800;
+  cursor: not-allowed;
+
+  &:hover {
+    background: var.$clr-cyan-900;
+    border: 3px solid var.$clr-cyan-900;
+  }
 }
 
 .calculator__result-list {
   list-style: none;
   padding-inline: 0;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }

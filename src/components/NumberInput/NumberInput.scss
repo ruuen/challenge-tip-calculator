@@ -7,11 +7,20 @@
 
 .calculator__label-wrapper {
   padding: 0 0 0.45em 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 .calculator__input-label {
   font-size: 1rem;
   color: var.$clr-cyan-500;
+  margin-top: auto;
+}
+
+.calculator__field-error {
+  color: var.$clr-red;
+  max-width: 50%;
+  text-align: right;
 }
 
 .calculator__input-unit-wrapper {
@@ -30,7 +39,7 @@
   $curved-border: 5px;
 
   position: relative;
-  max-width: 100%;
+  width: 100%;
   border: 2px solid var.$clr-grey-light;
   border-radius: $curved-border;
   padding: 0.125em 0.6em;
@@ -39,13 +48,17 @@
   text-align: right;
   color: var.$clr-cyan-800;
 
+  &--error {
+    border: 2px solid var.$clr-red;
+  }
+
   &::placeholder {
     color: var.$clr-cyan-800;
     opacity: 0.35;
   }
 
   &:hover {
-    border: 2px solid var.$clr-cyan-800;
+    border: 2px solid var.$clr-cyan-400;
     cursor: pointer;
   }
 }
