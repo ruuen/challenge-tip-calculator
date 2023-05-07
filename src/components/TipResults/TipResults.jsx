@@ -6,7 +6,7 @@ export default function TipResults({ tipEach, totalEach, handleReset }) {
   return (
     <section
       className={`calculator__result-group ${
-        tipEach === 0.0 || totalEach === 0.0 ? "calculator__result-group--empty" : ""
+        tipEach === 0.0 && totalEach === 0.0 ? "calculator__result-group--empty" : ""
       }`}
     >
       <ul className="calculator__result-list">
