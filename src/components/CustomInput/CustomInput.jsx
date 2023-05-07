@@ -1,3 +1,5 @@
+import "./CustomInput.scss";
+
 export default function CustomInput({ id, name, value, isSelected, hasError, errorMsg, handleChange }) {
   return (
     <div>
@@ -8,9 +10,10 @@ export default function CustomInput({ id, name, value, isSelected, hasError, err
         name={name}
         inputMode="numeric"
         value={value}
+        placeholder="Custom"
         onChange={handleChange}
       />
-      <div>
+      <div className="calculator__input-custom--info">
         <label className="visually-hidden" htmlFor={name}>
           Custom Tip Percent
         </label>

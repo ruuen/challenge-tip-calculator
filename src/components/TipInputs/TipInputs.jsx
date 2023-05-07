@@ -1,4 +1,4 @@
-import { useState } from "react";
+import "./TipInputs.scss";
 import NumberInput from "../NumberInput/NumberInput";
 import ButtonGroupInput from "../ButtonGroupInput/ButtonGroupInput";
 
@@ -16,7 +16,7 @@ export default function TipInputs({ formState, handleChange, handleSubmit }) {
   });
 
   return (
-    <form className="calculator__input-group" onSubmit={handleSubmit}>
+    <form className="calculator__input-group" onSubmit={handleSubmit} autoComplete="off">
       {inputElements}
       <button className="visually-hidden" type="submit">
         Submit

@@ -1,9 +1,10 @@
+import "./AppHeader.scss";
+import appLogo from "../../media/images/logo.svg";
+
 export default function AppHeader() {
   return (
     <header className="header">
-      <div className="header__wrapper">
-        <h1>Splitter</h1>
-      </div>
+      <img src={appLogo} className="header__logo" alt="Splitter" />
     </header>
   );
 }

@@ -1,3 +1,5 @@
+import "./Button.scss";
+
 export default function Button({ id, name, value, isSelected, handleClick }) {
   // Can probably append a % symbol onto the button value with CSS
   return (

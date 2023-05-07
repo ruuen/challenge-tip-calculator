@@ -1,3 +1,5 @@
+import "./ResultItem.scss";
+
 export default function ResultItem({ title, value }) {
   return (
     <li className="calculator__result">

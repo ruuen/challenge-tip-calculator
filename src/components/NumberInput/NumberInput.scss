@@ -1,0 +1,64 @@
+@use "../../scss/variables.scss" as var;
+
+.calculator__input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.calculator__label-wrapper {
+  padding: 0 0 0.45em 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.calculator__input-label {
+  font-size: 1rem;
+  color: var.$clr-cyan-500;
+  margin-top: auto;
+}
+
+.calculator__field-error {
+  color: var.$clr-red;
+  max-width: 50%;
+  text-align: right;
+}
+
+.calculator__input-unit-wrapper {
+  position: relative;
+}
+
+.calculator__unit {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  padding: 0.175em 0 0 1em;
+  user-select: none;
+}
+
+.calculator__input {
+  $curved-border: 5px;
+
+  position: relative;
+  width: 100%;
+  border: 2px solid var.$clr-grey-light;
+  border-radius: $curved-border;
+  padding: 0.125em 0.6em;
+  background: var.$clr-grey-light;
+  font-size: 1.5rem;
+  text-align: right;
+  color: var.$clr-cyan-800;
+
+  &--error {
+    border: 2px solid var.$clr-red;
+  }
+
+  &::placeholder {
+    color: var.$clr-cyan-800;
+    opacity: 0.35;
+  }
+
+  &:hover {
+    border: 2px solid var.$clr-cyan-400;
+    cursor: pointer;
+  }
+}
