@@ -6,10 +6,15 @@
   flex-direction: column;
 }
 
+@media (min-width: var.$breakpoint-tablet) {
+  #root {
+    align-items: center;
+  }
+}
+
 @media (min-width: var.$breakpoint-desktop) {
   #root {
     justify-content: center;
-    // align-items: center;
     gap: 3em;
   }
 }

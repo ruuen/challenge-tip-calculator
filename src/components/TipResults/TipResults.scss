@@ -54,6 +54,24 @@
   flex-direction: column;
 }
 
+@media (min-width: var.$breakpoint-tablet) {
+  .calculator__result-group {
+    justify-content: space-between;
+  }
+
+  .calculator__result-list {
+    flex-grow: unset;
+
+    > * {
+      margin: 0 0 1.5em 0;
+    }
+
+    > *:last-child {
+      margin: 0;
+    }
+  }
+}
+
 @media (min-width: var.$breakpoint-desktop) {
   .calculator__result-group {
     margin: 0;
@@ -63,5 +81,9 @@
 
   .calculator__result-list {
     gap: 1.25em;
+
+    > * {
+      margin: 0;
+    }
   }
 }
