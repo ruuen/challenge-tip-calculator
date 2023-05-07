@@ -14,8 +14,8 @@ html,
 body,
 #root,
 .page-container {
-  height: 100vh;
-  height: -webkit-fill-available;
+  min-height: 100svh;
+  min-height: -webkit-fill-available;
 }
 
 body {
