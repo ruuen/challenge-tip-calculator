@@ -17,7 +17,6 @@ export default function CustomInput({ id, name, value, isSelected, hasError, err
         <label className="visually-hidden" htmlFor={name}>
           Custom Tip Percent
         </label>
-        {hasError === true ? <span className="calculator__field-error">{errorMsg}</span> : ""}
       </div>
     </div>
   );

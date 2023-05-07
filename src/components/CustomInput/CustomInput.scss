@@ -36,3 +36,22 @@
     }
   }
 }
+
+@media (min-width: var.$breakpoint-desktop) {
+  .calculator__input-custom {
+    // padding: 0;
+    text-indent: 0.2em;
+
+    &::placeholder {
+      text-align: center;
+    }
+
+    &:placeholder-shown {
+      padding: 0;
+    }
+
+    &:focus {
+      padding: 0 0.75em;
+    }
+  }
+}

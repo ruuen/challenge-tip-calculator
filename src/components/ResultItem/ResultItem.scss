@@ -25,3 +25,13 @@
     font-size: 2rem;
   }
 }
+
+@media (min-width: var.$breakpoint-desktop) {
+  .calculator__result {
+    flex-grow: unset;
+    align-items: center;
+    &-value {
+      font-size: 3rem;
+    }
+  }
+}

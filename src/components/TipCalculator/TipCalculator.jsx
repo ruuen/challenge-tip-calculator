@@ -18,7 +18,7 @@ const initialFormState = [
     fieldName: "tipPercent",
     label: "Select Tip %",
     source: "preset",
-    value: 5,
+    value: 0,
     hasError: false,
     errorMsg: null,
   },
