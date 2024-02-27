@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontendmentor]()
-- Live Site URL: [Netlify](https://rd-challenge-tip-calculator.netlify.app/)
+- Solution URL: [Frontendmentor](https://www.frontendmentor.io/solutions/tip-calculator-with-react-and-scss-wcDPTbV98B)
+- Live Site URL: [Cloudflare Pages](https://mbr-challenge-tip-calculator.pages.dev/)
 
 ## Built with
 
@@ -44,5 +44,5 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@ruuendigital](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@ruuen](https://www.frontendmentor.io/profile/ruuen)
 - Twitter - [@maxruuen](https://www.twitter.com/maxruuen)
